@@ -61,7 +61,7 @@ internal class Program
                 //Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным
                 Console.Write("\nEnter a number: ");
                 a = int.Parse(Console.ReadLine());
-                if (a % 2 == 0) Console.WriteLine($"Number {a} is a even");
+                if (a % 2 == 0) Console.WriteLine($"Number {a} is a even"); //Проверка делится ли число на 2 без остатка
                 else Console.WriteLine($"Number {a} is a odd");
                 return true;
             case "4":
@@ -69,7 +69,7 @@ internal class Program
                 Console.Write("\nEnter a number: ");
                 a = int.Parse(Console.ReadLine());
                 Console.Write($"{a} -> ");
-                for(int i = 2; i<=a; i++){
+                for(int i = 2; i<=a; i++){                 //Цикл для проверки на четность
                     if (i%2==0)Console.Write($"{i}, ");
                 }
                 return true;
